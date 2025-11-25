@@ -7,7 +7,7 @@
   found in index.html
 */
 function ftnSalutation(){
-  //  implement your statement(s) here
+    return new Array("Mr.", "Mrs.", "Ms.", "Dr.");
 }
 
 /* 
@@ -17,8 +17,11 @@ function ftnSalutation(){
   calls it
 */
 const ftnGreeting = (salutation, user) => {
-    //  implement your statement(s) here
-}
+    // implement your statement(s) here
+    const msg = `Hi, ${salutation} ${user}!`;
+    return msg;
+};
+
 
 /*
 Complete the challenge statement below
@@ -29,3 +32,6 @@ Hint:
 - validateInputs returns false if either choice or name is incorrectly filled
 - validateInputs returns true if both choice and name are correctly filled
 */
+function validateInputs(choice, name = "") {
+    return choice !== "" && name !== "";
+}
