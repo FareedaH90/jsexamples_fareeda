@@ -1,16 +1,26 @@
 {
   "name": "b_typecasting",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "index.js",
   "scripts": {
     "start":"node greetuser.js",
+=======
+  "main": "index.js",
+  "scripts": {
+    "start": "node greetuser.js",
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "commonjs",
+=======
+  "description": "",
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }

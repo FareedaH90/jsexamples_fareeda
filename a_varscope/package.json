@@ -1,13 +1,23 @@
 {
   "name": "a_varscope",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "index.js",
   "scripts": {
+=======
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "commonjs"
+=======
+  "description": ""
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 }

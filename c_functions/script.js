@@ -7,7 +7,12 @@
   found in index.html
 */
 function ftnSalutation(){
+<<<<<<< HEAD
     return new Array("Mr.", "Mrs.", "Ms.", "Dr.");
+=======
+  //  implement your statement(s) here
+  return new Array("Mr.", "Mrs.", "Ms.", "Dr.");
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 }
 
 /* 
@@ -17,11 +22,17 @@ function ftnSalutation(){
   calls it
 */
 const ftnGreeting = (salutation, user) => {
+<<<<<<< HEAD
     // implement your statement(s) here
     const msg = `Hi, ${salutation} ${user}!`;
     return msg;
 };
 
+=======
+    //  implement your statement(s) here
+    return `Hi, ${salutation} ${user}!`;
+}
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 /*
 Complete the challenge statement below
@@ -32,6 +43,14 @@ Hint:
 - validateInputs returns false if either choice or name is incorrectly filled
 - validateInputs returns true if both choice and name are correctly filled
 */
+<<<<<<< HEAD
 function validateInputs(choice, name = "") {
     return choice !== "" && name !== "";
 }
+=======
+function validateInputs(choice = "", name = ""){
+
+  return choice !== "" && name !== "";
+
+}
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710

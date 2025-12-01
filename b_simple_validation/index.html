@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -12,20 +13,42 @@
     <!-- ask user for 8 digit phone number-->
     <form action="" id="formPhone">
         <label for="txtInput">Please enter your 8 digit phone number:</label>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Ask user for 8 digit phone number -->
+    <form action="" id="formPhone">
+        <label for="txtInput">Please enter your 8-digit phone number:</label>
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
         <input type="text" id="txtInput">
         <button type="submit">Submit</button>
     </form>
 
+<<<<<<< HEAD
     <!-- internal script to process the user input-->
     <script>
   // Using the DOM to process the form inputs
   const form = document.querySelector("form").addEventListener("submit", (event) => {
                 event.preventDefault(); // suppress the default actions
 
+=======
+    <!-- Internal Script to process the user input -->
+    <script>
+        // Using the DOM to process the form inputs
+        const form = document.querySelector("form").addEventListener("submit", (event) => {
+            event.preventDefault(); // suppress the default actions
+            
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
             // Obtain the user's input from txtInput
             let result = document.getElementById("txtInput").value;
 
             // Validate that the user submitted a number
+<<<<<<< HEAD
             if (isNaN(result)) {
       return alert("You did not enter a phone number!");
     }
@@ -44,4 +67,23 @@
 
 </body>
 
+=======
+            if(isNaN(result)){
+                return alert("You did not enter a phone number!");
+            }
+
+            // Validate that the user input is of a length of 8 numbers
+            if(result.length != 8){
+                return alert("You need to enter a 8-digit number!");
+            }
+
+            // If all of the above passes, then we thank the user
+            result = "+65 - " + result;
+            return alert(`Thank you, we will contact you at ${result}`);
+
+        });
+    </script>
+
+</body>
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 </html>

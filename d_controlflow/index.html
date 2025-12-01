@@ -58,9 +58,15 @@
             <label class="form-check-label" for="radioMeal">Beef</label>
           </div>
 
+<<<<<<< HEAD
           <!-- Chicken -->
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioMeal" id="radioMealChicken" value="Chicken"
+=======
+            <!-- Chicken -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioMeal" id="radioMealChicken" value="Chicken"
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
               onclick="ftnRadioMeal('Chicken')">
             <label class="form-check-label" for="radioMeal">Chicken</label>
           </div>
@@ -127,8 +133,21 @@
         }
       }
 
+<<<<<<< HEAD
       // TODO: using logical AND operation to ensure that name is validated == true AND mealSelected == true
       if (validated && mealSelected) {
+=======
+      for (let index = 0; index < mealPreference.length; index++) {
+        if(mealPreference[index].checked){
+          mealSelected = true;
+          break;  /* prematurely end the for loop */
+        }
+      }
+
+      // TODO: using logical AND operation to ensure that name is validated == true AND mealSelected == true
+      // Same as: if(validated === true AND mealSelected === true)
+      if(validated && mealSelected) {
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
         return alert("Thank you. We received your submission.");
       }
 
