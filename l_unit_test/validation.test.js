@@ -39,3 +39,4 @@ test.each([
 ])('.isEmail($email)', ({email, expected}) => {
     expect(isEmail(email)).toBe(expected);
 })
+
