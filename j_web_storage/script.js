@@ -34,7 +34,7 @@ function addItem(item) {
 async function fetchColorsList() {
     try {
         const response = await fetch("https://reqres.in/api/unknown", {
-            headers: { "x-api-key": "reqres_3824db0ed4604efb9c7f2479e2e4940b" }
+            headers: { "x-api-key": "your-api-key" }
         });
 
         const resp = await response.json();
@@ -50,7 +50,7 @@ async function fetchColorsList() {
         // start fetching from 2nd page onwards
         for (let currentPage = page; currentPage <= totalPages; currentPage++) {
             const response = await fetch(`https://reqres.in/api/unknown?page=${currentPage}`, {
-                headers: { "x-api-key": "reqres_3824db0ed4604efb9c7f2479e2e4940b" }
+                headers: { "x-api-key": "your-api-key" }
             });
 
             const resp = await response.json();
